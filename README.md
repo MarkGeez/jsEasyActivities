@@ -10,3 +10,4 @@ https://roadmap.sh/projects/js-expense-summary
 https://roadmap.sh/projects/js-grade-report-generator
 https://roadmap.sh/projects/js-order-status-helper
 https://roadmap.sh/projects/js-password-rule-checker
+https://roadmap.sh/projects/js-product-search-and-filter
