@@ -12,23 +12,24 @@ const products = [
 ];
 
 function filterByCategory(products, category){
-
+    return products.filter((product) => product.category ===  category);
 } // should return products in the matching category.
 
 function filterByMaxPrice(products, maxPrice){
-
+    return products.filter((product) => product.price <= maxPrice);
 } // should return products at or below the max price.
 
 function getInStockProducts(products){
-
+  return products.filter((product) => product.inStock === true)
 } // should return products where inStock is true.
 
 function findProductById(products, productId){
-
+  return products.filter((product) => product.id === productId)
 } // should return one matching product or undefined.
 
 function searchProducts(products, searchText){
-
+  return products.filter((product) => product.name == searchText
+)
 } //should return products whose name includes the search text, ignoring casing.
 
 console.log(filterByCategory(products, 'stationery').map((product) => product.name));
@@ -44,4 +45,4 @@ console.log(findProductById(products, 99));
 { id: 3, name: "Pen Set", category: "stationery", price: 6, inStock: true }
 ["Pen Set"]
 ["Notebook", "Pen Set", "Water Bottle"]
-undefined
+undefined */
